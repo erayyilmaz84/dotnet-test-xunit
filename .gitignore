@@ -1,0 +1,13 @@
+TickTackService/obj/project.assets.json
+TickTackService/obj/project.nuget.cache
+TickTackService/obj/TickTackService.csproj.nuget.dgspec.json
+TickTackService/obj/TickTackService.csproj.nuget.g.props
+TickTackService/obj/TickTackService.csproj.nuget.g.targets
+TickTackService.Tests/obj/project.assets.json
+TickTackService.Tests/obj/project.nuget.cache
+TickTackService.Tests/obj/TickTackService.Tests.csproj.nuget.dgspec.json
+TickTackService.Tests/obj/TickTackService.Tests.csproj.nuget.g.props
+TickTackService.Tests/obj/TickTackService.Tests.csproj.nuget.g.targets
+TickTackService.Tests/obj/Debug/net6.0/TickTackService.Tests.AssemblyInfo.cs
+TickTackService.Tests/obj/Debug/net6.0/TickTackService.Tests.AssemblyInfoInputs.cache
+TickTackService.Tests/obj/Debug/net6.0/TickTackService.Tests.GeneratedMSBuildEditorConfig.editorconfig
