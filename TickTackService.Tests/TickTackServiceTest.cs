@@ -12,6 +12,8 @@ namespace TickTack.ServiceTests
             string result = service.TickTack(i);
             Assert.Equal(result, i.ToString());
         }
+
+        
         [Fact]
         public void dividedByThree()
         {
@@ -20,21 +22,6 @@ namespace TickTack.ServiceTests
             string result = service.TickTack(i);
             Assert.Equal(result,"Tick");
         }
-        [Fact]
-        public void dividedByFive()
-        {
-            var service = new TickTackService();
-            int i = 100;
-            string result = service.TickTack(i);
-            Assert.Equal(result, "Tack");
-        }
-        [Fact]
-        public void dividedByThreeAndFive()
-        {
-            var service = new TickTackService();
-            int i = 45;
-            string result = service.TickTack(i);
-            Assert.Equal(result, "TickTack");
-        }
+
     }
 }
