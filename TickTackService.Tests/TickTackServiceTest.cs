@@ -4,40 +4,41 @@ namespace TickTack.ServiceTests
 {
     public class TickTackServiceTest
     {
-        [Fact]
-        public void ordinalNumbers()
+        TickTackService tickTackService;
+
+        public TickTackServiceTest()
         {
-            var service = new TickTackService();
-            int i = 1;
-            string result = service.TickTack(i);
-            Assert.Equal(result, i.ToString());
+            tickTackService = new TickTackService();
         }
-        
+
+
         [Fact]
-        public void dividedByThree()
+        public void shouldReturnTick()
         {
-            var service = new TickTackService();
-            int i = 102;
-            string result = service.TickTack(i);
-            Assert.Equal(result,"Tick");
+            Assert.Equal(tickTackService.print(96), "Tick");
+            Assert.Equal(tickTackService.print(99), "Tick");
+            Assert.Equal(tickTackService.print(102), "Tick");
         }
-        
+
         [Fact]
-        public void dividedByFive()
+        public void shouldReturnTack()
         {
-            var service = new TickTackService();
-            int i = 100;
-            string result = service.TickTack(i);
-            Assert.Equal(result, "Tack");
+            Assert.Equal(tickTackService.print(95), "Tack");
+            Assert.Equal(tickTackService.print(100), "Tack");
         }
-        
+
         [Fact]
-        public void dividedByThreeAndFive()
+        public void shouldReturnTickTack()
         {
-            var service = new TickTackService();
-            int i = 45;
-            string result = service.TickTack(i);
-            Assert.Equal(result, "TickTack");
+            Assert.Equal(tickTackService.print(90), "TickTack");
+            Assert.Equal(tickTackService.print(105), "TickTack");
+        }
+
+        [Fact]
+        public void shouldReturnNumber()
+        {
+            Assert.Equal(tickTackService.print(106), "106");
+            Assert.Equal(tickTackService.print(107), "107");
         }
 
     }
